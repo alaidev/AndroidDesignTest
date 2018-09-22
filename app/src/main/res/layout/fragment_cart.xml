@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/cart_header_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_cart_header"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cart_footer_layout"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/fragment_cart_footer"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cart_no_data_layout"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_above="@+id/cart_footer_layout"
+        android:layout_below="@id/cart_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/fragment_cart_nodata"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cart_list_layout"
+        android:orientation="vertical"
+        android:layout_above="@id/cart_footer_layout"
+        android:layout_below="@id/cart_header_layout"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+        <include layout="@layout/fragment_cart_list"/>
+    </LinearLayout>
+</RelativeLayout>

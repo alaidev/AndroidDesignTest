@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="#000"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/tab_item_home"
+        style="@style/tab_item_linear_layout">
+        <ImageButton
+            android:src="@drawable/home"
+            android:id="@+id/tab_item_home_btn"
+            style="@style/tab_item_image_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tab_item_cart"
+        style="@style/tab_item_linear_layout">
+        <ImageButton
+            android:src="@drawable/cart"
+            android:id="@+id/tab_item_cart_btn"
+            style="@style/tab_item_image_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tab_item_category"
+        style="@style/tab_item_linear_layout">
+        <ImageButton
+            android:src="@drawable/category"
+            android:id="@+id/tab_item_category_btn"
+            style="@style/tab_item_image_button"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tab_item_person"
+        style="@style/tab_item_linear_layout">
+        <ImageButton
+            android:src="@drawable/person"
+            android:id="@+id/tab_item_person_btn"
+            style="@style/tab_item_image_button"/>
+    </LinearLayout>
+</LinearLayout>
